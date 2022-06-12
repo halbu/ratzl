@@ -7,10 +7,10 @@
   <title>ratzl</title>
   <link rel="icon" type="image/x-icon" href="./favicon.ico">
 </head>
-<body class="flex-centred">
-  <div id="title-card-holder" class="flex-centred">
+<body class="flex-c">
+  <div id="title-card-holder" class="flex-c">
     <div class="icon-side-panel align-left">
-      <div class="svg-holder flex-centred button-clickable" onclick="wg.activateModal('helpModal');">
+      <div class="svg-holder flex-c btn" onclick="wg.showModal('help-modal');">
         <svg viewBox="0 0 122.88 122.88">
           <path
             d="M109.72,61.44v-0.01h0.02c0-13.31-5.42-25.38-14.17-34.13c-8.75-8.74-20.81-14.16-34.1-14.16v0.02h-0.03h-0.01v-0.02 c-13.3,0-25.38,5.42-34.13,14.17c-8.74,8.75-14.16,20.81-14.16,34.11h0.02v0.03v0.01h-0.02c0,8.88,2.41,17.22,6.59,24.36 c8.38,14.31,23.92,23.92,41.68,23.93v-0.02h0.03h0.01v0.02c13.31,0,25.38-5.42,34.13-14.17c1.44-1.44,2.78-2.95,4-4.52 C105.93,82.88,109.72,72.6,109.72,61.44L109.72,61.44z M68.38,73.86H51.86v-1.65c0-2.8,0.3-5.09,0.94-6.85 c0.64-1.77,1.59-3.35,2.85-4.81c1.27-1.45,4.11-4,8.51-7.66c2.34-1.92,3.52-3.67,3.52-5.25c0-1.61-0.48-2.84-1.41-3.73 c-0.94-0.88-2.37-1.33-4.3-1.33c-2.07,0-3.76,0.69-5.1,2.04c-1.35,1.36-2.21,3.75-2.58,7.14l-16.89-2.1 c0.58-6.2,2.84-11.2,6.76-14.98C48.1,30.89,54.12,29,62.24,29c6.32,0,11.43,1.33,15.32,3.95c5.29,3.57,7.92,8.33,7.92,14.26 c0,2.48-0.69,4.86-2.04,7.15c-1.36,2.3-4.15,5.09-8.36,8.39c-2.92,2.34-4.77,4.19-5.54,5.6C68.77,69.76,68.38,71.6,68.38,73.86 L68.38,73.86z M51.27,78.26h17.72v15.61H51.27V78.26L51.27,78.26z M122.85,61.43h0.03v0.01c0,14.19-4.82,27.27-12.92,37.68 c-1.59,2.04-3.29,3.97-5.08,5.76c-11.1,11.1-26.45,17.97-43.43,17.98v0.03h-0.01h-0.03v-0.03c-22.59-0.01-42.34-12.22-52.99-30.4 c-5.33-9.1-8.39-19.7-8.39-31H0v-0.01v-0.03h0.03C0.03,44.44,6.9,29.09,18,18C29.09,6.9,44.45,0.03,61.43,0.03V0h0.01h0.03v0.03 c16.97,0.01,32.32,6.87,43.41,17.97C115.98,29.09,122.85,44.45,122.85,61.43L122.85,61.43z" />
@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="icon-side-panel align-left">
-      <div class="svg-holder flex-centred button-clickable" onclick="wg.tryShowStats();">
+      <div class="svg-holder flex-c btn" onclick="wg.tryShowStats();">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 120.5" style="enable-background:new 0 0 122.88 120.5" xml:space="preserve">
           <style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
           <g>
@@ -27,9 +27,9 @@
         </svg>
       </div>
     </div>
-    <div id="title-card" class="flex-centred">R A T Z L</div>
+    <div id="title-card" class="flex-c">R A T Z L</div>
     <div class="icon-side-panel align-right">
-      <div class="svg-holder flex-centred button-clickable" onclick="wg.tryShowCrowns();">
+      <div class="svg-holder flex-c btn" onclick="wg.tryShowCrowns();">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 107.76" style="enable-background:new 0 0 122.88 107.76" xml:space="preserve">
           <style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
           <g>
@@ -39,8 +39,8 @@
       </div>
     </div>
     <div class="icon-side-panel align-right">
-      <div id ="reload-holder" style="border-radius: 100%;">
-        <div id="refresh-icon" class="svg-holder flex-centred button-clickable" onclick="reset();">
+      <div id="reset-holder">
+        <div id="reset-icon" class="svg-holder flex-c btn" onclick="reset();">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
             <path fill="#000000" d="M13.901 2.599c-1.463-1.597-3.565-2.599-5.901-2.599-4.418 0-8 3.582-8 8h1.5c0-3.59 2.91-6.5 6.5-6.5 1.922 0 3.649 0.835 4.839 2.161l-2.339 2.339h5.5v-5.5l-2.099 2.099z"></path>
             <path fill="#000000" d="M14.5 8c0 3.59-2.91 6.5-6.5 6.5-1.922 0-3.649-0.835-4.839-2.161l2.339-2.339h-5.5v5.5l2.099-2.099c1.463 1.597 3.565 2.599 5.901 2.599 4.418 0 8-3.582 8-8h-1.5z"></path>
@@ -52,15 +52,15 @@
   <div id="score-card-holder">
     <div id="score-readout-holder" class="readout-holder">
       <div id="score-readout" class="ui-value">0</div>
-      <div class="ui-label font-small">&nbsp;points</div>
+      <div class="ui-label f3">&nbsp;points</div>
     </div>
     <div id="multi-readout-holder" class="readout-holder">
-      <div class="ui-label font-small">multiplier&nbsp;</div>
+      <div class="ui-label f3">multiplier&nbsp;</div>
       <div id="multi-readout" class="ui-value">0</div>
     </div>
   </div>
   <div id="grid-holder" class="grid-holder"></div>
-  <div id="next-text" class="font-smaller" style="margin-top: 10px;">
+  <div id="next-text" class="f4">
     <div>►</div>
     <div>next tiles</div>
     <div>►</div>
@@ -68,57 +68,57 @@
   <div id="lil-grid"></div>
   <div id="moves-readout-holder" class="readout-holder">
     <div id="moves-readout" class="ui-value">0</div>
-    <div class="font-small">moves remaining</div>
+    <div class="f3">moves remaining</div>
   </div>
 </body>
 <div id="overlay"></div>
-<div id="helpModal" class="modal" style="visibility: hidden;">
-  <div class="flex-centred button-clickable modal-cancel">&times;</div>
-  <div class="modal-title">r a t z l</div>
-  <div class="modal-subtitle">
+<div id="help-modal" class="modal" style="visibility: hidden;">
+  <div class="flex-c btn mo-cancel">&times;</div>
+  <div class="mo-title">r a t z l</div>
+  <div class="mo-sub">
     <i>rätsel</i> (fig: = geheimnis) riddle, mystery, enigma
   </div>
-  <div class="modal-title-separator"></div>
-  <div class="modal-content">
-    <div class="modal-body-section">
-      <div class="modal-text-title">how to play</div>
-      <div class="modal-text-body">
+  <div class="mo-separator"></div>
+  <div class="mo-content">
+    <div class="mo-body">
+      <div class="mo-body-title">how to play</div>
+      <div class="mo-body">
         swipe letter tiles to swap them with their neighbour.
-        creating a word 3 letters or longer removes its tiles from the board.
+        creating a word 3 letters or longer clears its tiles from the board.
         new tiles are fed in from the top of the board.
         below the game board you can see which tiles are coming next.
       </div>
     </div>
-    <div class="modal-body-section">
-      <div class="modal-text-title">scoring</div>
-      <div class="modal-text-body">
-        each word scores points (3 letters: 25pts, 4 letters: 100pts, 5 letters: 500pts).
+    <div class="mo-body">
+      <div class="mo-body-title">scoring</div>
+      <div class="mo-body">
+        each word scores points (3 letters - 25pts, 4 - 100pts, 5 - 500pts).
         these points are multiplied by your multiplier and added to your score.
-        every word you create increases your multiplier by 1.
+        each word also increases your multiplier by 1.
         if you make a move that does not create a word, your multiplier is halved.
       </div>
     </div>
-    <div class="modal-body-section">
-      <div class="modal-text-title">miscellanea</div>
-      <div class="modal-text-body">
+    <div class="mo-body">
+      <div class="mo-body-title">miscellanea</div>
+      <div class="mo-body">
         ratzl is
         <u>deterministic</u>.
         there is one challenge per day, and for each challenge, the board and letters are always the same for everybody.
       </div>
     </div>
-    <div class="modal-text-body font-smallest">
+    <div class="f5">
       made by <a href="https://github.com/halbu">halbu</a>
     </div>
   </div>
 </div>
-<div id="gameOverModal" class="modal" style="visibility: hidden;">
-  <span class="flex-centred button-clickable modal-cancel">&times;</span>
-  <div class="modal-title">g a m e&nbsp; &nbsp;o v e r</div>
-  <div class="modal-title-separator"></div>
-  <div class="modal-content">
-    <div class="modal-body-section">
-      <div id="this-game-score" class="modal-text-title font-big"></div>
-      <div class="modal-text-body">your final score</div>
+<div id="game-over-modal" class="modal" style="visibility: hidden;">
+  <span class="flex-c btn mo-cancel">&times;</span>
+  <div class="mo-title">g a m e&nbsp; &nbsp;o v e r</div>
+  <div class="mo-separator"></div>
+  <div class="mo-content">
+    <div class="mo-body">
+      <div id="this-game-score" class="mo-title f1"></div>
+      <div class="mo-body">your final score</div>
     </div>
     <div class="graph-grid-holder">
       <div class="graph-grid-row dashed-lower-border" style="height: 50px;">
@@ -136,24 +136,24 @@
         </div>
       </div>
       <div class="graph-grid-row">
-        <div id="3-words" class="graph-grid-cell modal-text-title font-big"></div>
-        <div id="4-words" class="graph-grid-cell modal-text-title font-big"></div>
-        <div id="5-words" class="graph-grid-cell modal-text-title font-big"></div>
+        <div id="3-words" class="graph-grid-cell mo-title f1"></div>
+        <div id="4-words" class="graph-grid-cell mo-title f1"></div>
+        <div id="5-words" class="graph-grid-cell mo-title f1"></div>
       </div>
       <div class="graph-grid-row">
-        <div class="graph-grid-cell font-smaller">3-letter words</div>
-        <div class="graph-grid-cell font-smaller">4-letter words</div>
-        <div class="graph-grid-cell font-smaller">5-letter words</div>
+        <div class="graph-grid-cell f4">3-letter words</div>
+        <div class="graph-grid-cell f4">4-letter words</div>
+        <div class="graph-grid-cell f4">5-letter words</div>
       </div>
     </div>
     <div class="horizontal-block">
-      <div class="modal-body-section flex-half">
-        <div id="todays-best-score" class="modal-text-title font-mid"></div>
-        <div class="modal-text-body">
+      <div class="mo-body flex-half">
+        <div id="todays-best-score" class="mo-title f2"></div>
+        <div class="mo-text-body">
           <div>best score today</div>
         </div>
-        <div class="flex-centred">
-          <div id="todays-best-score-replay" class="flex-centred button-clickable" onclick="wg.tryStartReplay();">
+        <div class="flex-c">
+          <div id="todays-best-score-replay" class="flex-c btn" onclick="wg.tryStartReplay();">
             <div class="svg-holder">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
                 eyepath
@@ -163,20 +163,20 @@
         </div>
       </div>
       <div class="vertical-separator"></div>
-      <div class="modal-body-section flex-half">
-        <div id="number-of-attempts-today" class="modal-text-title font-mid"></div>
-        <div class="modal-text-body">
+      <div class="mo-body flex-half">
+        <div id="number-of-attempts-today" class="mo-title f2"></div>
+        <div class="mo-body">
           attempts today
         </div>
       </div>
     </div>
-    <div class="modal-body-section">
-      <div id="share-callout" class="modal-text-body">
+    <div class="mo-body">
+      <div id="share-callout" class="mo-body">
         share your score and a replay of this game with your friends!
       </div>
       <div id="share-holder">
-        <div id="share-button" class="flex-centred button-clickable button-large button-green" onclick="wg.copyReplayText();">
-          <div class="button-label" style="width: 77.5%;">
+        <div id="share-button" class="flex-c btn btn-large btn-green" onclick="wg.copyReplayText();">
+          <div class="btn-label" style="width: 77.5%;">
             <div>share score</div>
             <div>and replay</div>
           </div>
@@ -190,21 +190,21 @@
             </div>
           </div>
         </div>
-        <div id="copy-readout" class="font-small transition-opacity font-transparent">&nbsp;</div>
+        <div id="copy-readout" class="f3 trn-opac ft">&nbsp;</div>
       </div>
     </div>
   </div>
 </div>
-<div id="replayOverModal" class="modal" style="visibility: hidden;">
-  <span class="flex-centred button-clickable modal-cancel">&times;</span>
-  <div class="modal-title">r e p l a y&nbsp; &nbsp;o v e r</div>
-  <div class="modal-title-separator"></div>
-  <div class="modal-content">
-    <div class="modal-body-section">
-      <div id="score-report" class="modal-text-body"></div>
+<div id="replay-over-modal" class="modal" style="visibility: hidden;">
+  <span class="flex-c btn mo-cancel">&times;</span>
+  <div class="mo-title">r e p l a y&nbsp; &nbsp;o v e r</div>
+  <div class="mo-separator"></div>
+  <div class="mo-content">
+    <div class="mo-body">
+      <div id="score-report" class="mo-body"></div>
     </div>
-    <div class="modal-body-section">
-      <div id="score-report2" class="modal-text-body"></div>
+    <div class="mo-body">
+      <div id="score-report2" class="mo-body"></div>
     </div>
     <div class="graph-grid-holder">
       <div class="graph-grid-row dashed-lower-border" style="height: 50px;">
@@ -222,34 +222,34 @@
         </div>
       </div>
       <div class="graph-grid-row">
-        <div id="3-words" class="graph-grid-cell font-mid"></div>
-        <div id="4-words" class="graph-grid-cell font-mid"></div>
-        <div id="5-words" class="graph-grid-cell font-mid"></div>
+        <div id="3-words" class="graph-grid-cell f2"></div>
+        <div id="4-words" class="graph-grid-cell f2"></div>
+        <div id="5-words" class="graph-grid-cell f2"></div>
       </div>
       <div class="graph-grid-row">
-        <div class="graph-grid-cell font-smaller">3-letter words</div>
-        <div class="graph-grid-cell font-smaller">4-letter words</div>
-        <div class="graph-grid-cell font-smaller">5-letter words</div>
+        <div class="graph-grid-cell f4">3-letter words</div>
+        <div class="graph-grid-cell f4">4-letter words</div>
+        <div class="graph-grid-cell f4">5-letter words</div>
       </div>
     </div>
   </div>
 </div>
-<div id="crownsModal" class="modal" style="visibility: hidden;">
-  <span class="flex-centred button-clickable modal-cancel">&times;</span>
-  <div class="modal-title">c r o w n s</div>
-  <div class="modal-title-separator"></div>
-  <div id="crownRowHolder" class="modal-content"></div>
+<div id="crowns-modal" class="modal" style="visibility: hidden;">
+  <span class="flex-c btn mo-cancel">&times;</span>
+  <div class="mo-title">c r o w n s</div>
+  <div class="mo-separator"></div>
+  <div id="crowns-holder" class="mo-content"></div>
 </div>
-<div id="statsModal" class="modal" style="visibility: hidden;">
-  <span class="flex-centred button-clickable modal-cancel">&times;</span>
-  <div class="modal-title">s t a t s</div>
-  <div class="modal-title-separator"></div>
-  <div class="modal-content">
-    <div class="modal-body-section">
-      <div id="stats-all-time-high" class="modal-text-title font-big"></div>
-      <div class="modal-text-body">all time high score</div>
-      <div class="flex-centred">
-        <div id="high-score-replay" class="flex-centred button-clickable" onclick="wg.tryStartAllTimeHighScoreReplay();">
+<div id="stats-modal" class="modal" style="visibility: hidden;">
+  <span class="flex-c btn mo-cancel">&times;</span>
+  <div class="mo-title">s t a t s</div>
+  <div class="mo-separator"></div>
+  <div class="mo-content">
+    <div class="mo-body">
+      <div id="stats-all-time-high" class="mo-title f1"></div>
+      <div class="mo-text-body">all time high score</div>
+      <div class="flex-c">
+        <div id="high-score-replay" class="flex-c btn" onclick="wg.tryStartAllTimeHighScoreReplay();">
           <div class="svg-holder">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
               eyepath
@@ -259,63 +259,63 @@
       </div>
     </div>
     <div class="horizontal-block">
-      <div class="modal-body-section flex-half">
-        <div id="stats-avg-daily-score" class="modal-text-title font-mid"></div>
-        <div class="modal-text-body">
+      <div class="mo-body flex-half">
+        <div id="stats-avg-daily-score" class="mo-title f2"></div>
+        <div class="mo-body">
           <div>average daily</div>
           <div>high score</div>
         </div>
       </div>
       <div class="vertical-separator"></div>
-      <div class="modal-body-section flex-half">
-        <div id="stats-total-dailies-played" class="modal-text-title font-mid"></div>
-        <div class="modal-text-body">
-          <div>total unique</div>
+      <div class="mo-body flex-half">
+        <div id="stats-total-dailies-played" class="mo-title f2"></div>
+        <div class="mo-body">
+          <div>unique</div>
           <div>dailies played</div>
         </div>
       </div>
     </div>
-    <div class="modal-body-section">
+    <div class="mo-body">
       <div id="stats-grid">
         <div class="stats-grid-row">
-          <div id="stats-length-3" class="modal-text-title font-mid stats-grid-cell-3"></div>
-          <div id="stats-length-4" class="modal-text-title font-mid stats-grid-cell-3"></div>
-          <div id="stats-length-5" class="modal-text-title font-mid stats-grid-cell-3"></div>
+          <div id="stats-length-3" class="mo-title f2 stats-grid-cell-3"></div>
+          <div id="stats-length-4" class="mo-title f2 stats-grid-cell-3"></div>
+          <div id="stats-length-5" class="mo-title f2 stats-grid-cell-3"></div>
         </div>
         <div class="stats-grid-row">
-          <div id="stats-percentages-3" class="modal-text-title stats-grid-cell-3"></div>
-          <div id="stats-percentages-4" class="modal-text-title stats-grid-cell-3"></div>
-          <div id="stats-percentages-5" class="modal-text-title stats-grid-cell-3"></div>
+          <div id="stats-percentages-3" class="mo-title stats-grid-cell-3"></div>
+          <div id="stats-percentages-4" class="mo-title stats-grid-cell-3"></div>
+          <div id="stats-percentages-5" class="mo-title stats-grid-cell-3"></div>
         </div>
         <div class="stats-grid-row" style="margin-bottom: 5px;">
-          <div id="stats-text-3" class="font-smaller stats-grid-cell-3">3 letter words</div>
-          <div id="stats-text-4" class="font-smaller stats-grid-cell-3">4 letter words</div>
-          <div id="stats-text-5" class="font-smaller stats-grid-cell-3">5 letter words</div>
+          <div id="stats-text-3" class="f4 stats-grid-cell-3">3 letter words</div>
+          <div id="stats-text-4" class="f4 stats-grid-cell-3">4 letter words</div>
+          <div id="stats-text-5" class="f4 stats-grid-cell-3">5 letter words</div>
         </div>
       </div>
     </div>
-    <div class="modal-body-section">
+    <div class="mo-body">
       <div id="stats-grid">
         <div class="stats-grid-row">
-          <div id="stats-alltime-tiles"  class="modal-text-title font-mid stats-grid-cell-4"></div>
-          <div id="stats-alltime-words"  class="modal-text-title font-mid stats-grid-cell-4"></div>
-          <div id="stats-alltime-points" class="modal-text-title font-mid stats-grid-cell-4"></div>
-          <div id="stats-alltime-games"  class="modal-text-title font-mid stats-grid-cell-4"></div>
+          <div id="stats-alltime-tiles"  class="mo-title f2 stats-grid-cell-4"></div>
+          <div id="stats-alltime-words"  class="mo-title f2 stats-grid-cell-4"></div>
+          <div id="stats-alltime-points" class="mo-title f2 stats-grid-cell-4"></div>
+          <div id="stats-alltime-games"  class="mo-title f2 stats-grid-cell-4"></div>
         </div>
         <div class="stats-grid-row" style="margin-bottom: 5px;">
-          <div class="font-smaller stats-grid-cell-4">
+          <div class="f4 stats-grid-cell-4">
             <div>tiles</div>
-            <div>popped</div>
+            <div>cleared</div>
           </div>
-          <div class="font-smaller stats-grid-cell-4">
+          <div class="f4 stats-grid-cell-4">
             <div>words</div>
             <div>found</div>
           </div>
-          <div class="font-smaller stats-grid-cell-4">
+          <div class="f4 stats-grid-cell-4">
             <div>points</div>
             <div>scored</div>
           </div>
-          <div class="font-smaller stats-grid-cell-4">
+          <div class="f4 stats-grid-cell-4">
             <div>games</div>
             <div>played</div>
           </div>
@@ -323,17 +323,17 @@
       </div>
     </div>
     <div class="horizontal-block">
-      <div class="modal-body-section flex-half">
-        <div id="stats-alltime-highest-multi" class="modal-text-title font-mid"></div>
-        <div class="modal-text-body">
+      <div class="mo-body flex-half">
+        <div id="stats-alltime-highest-multi" class="mo-title f2"></div>
+        <div class="mo-body">
           <div>all time highest</div>
           <div>multiplier</div>
         </div>
       </div>
       <div class="vertical-separator"></div>
-      <div class="modal-body-section flex-half">
-        <div id="stats-alltime-highest-one-turn-score" class="modal-text-title font-mid"></div>
-        <div class="modal-text-body">
+      <div class="mo-body flex-half">
+        <div id="stats-alltime-highest-one-turn-score" class="mo-title f2"></div>
+        <div class="mo-body">
           <div>all time highest</div>
           <div>scoring move</div>
         </div>
@@ -343,6 +343,6 @@
 </div>
 <script src="script.min.js"></script>
 <script>
-  let wg = new WRD();
-  let reset = () => wg.attemptGameReset();
+  let wg = new WG();
+  let reset = () => wg.tryReset();
 </script>
